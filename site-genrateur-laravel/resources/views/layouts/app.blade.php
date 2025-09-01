@@ -50,10 +50,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -158,6 +158,7 @@
         .image-wrapper:hover .delete-btn {
             opacity: 1;
         }
+
         :root {
             --primary: #3B82F6;
             --secondary: #F97316;
@@ -545,7 +546,8 @@
                 padding: 60px 0;
             }
 
-            .pricing-card, .review-card {
+            .pricing-card,
+            .review-card {
                 margin-bottom: 2rem;
             }
         }
@@ -570,6 +572,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -578,120 +581,128 @@
 
 
         /* Enhanced card styles */
-.card {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    overflow: hidden;
-}
+        .card {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden;
+        }
 
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
-}
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+        }
 
-.card .image-wrapper {
-    height: 180px;
-    overflow: hidden;
-    position: relative;
-}
+        .card .image-wrapper {
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+        }
 
-.card img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: transform 0.6s ease;
-}
+        .card img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
 
-.card:hover img {
-    transform: scale(1.08);
-}
+        .card:hover img {
+            transform: scale(1.08);
+        }
 
-.card-title {
-    font-size: 1.1rem;
-    letter-spacing: -0.02em;
-}
+        .card-title {
+            font-size: 1.1rem;
+            letter-spacing: -0.02em;
+        }
 
-.image-overlay {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
-}
+        .image-overlay {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+        }
 
-/* Button styling */
-.btn-gradient-primary {
-    background: linear-gradient(135deg, #4776E6 0%, #8E54E9 100%);
-    border: none;
-    color: white;
-    transition: all 0.3s ease;
-}
+        /* Button styling */
+        .btn-gradient-primary {
+            background: linear-gradient(135deg, #4776E6 0%, #8E54E9 100%);
+            border: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
 
-.btn-gradient-primary:hover {
-    box-shadow: 0 6px 15px rgba(78, 89, 229, 0.4);
-}
+        .btn-gradient-primary:hover {
+            box-shadow: 0 6px 15px rgba(78, 89, 229, 0.4);
+        }
 
-.btn-outline-primary {
-    border: 2px solid #4776E6;
-    color: #4776E6;
-    background: transparent;
-    transition: all 0.3s ease;
-}
+        .btn-outline-primary {
+            border: 2px solid #4776E6;
+            color: #4776E6;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
 
-.btn-outline-primary:hover {
-    background: rgba(71, 118, 230, 0.1);
-    transform: translateY(-2px);
-}
+        .btn-outline-primary:hover {
+            background: rgba(71, 118, 230, 0.1);
+            transform: translateY(-2px);
+        }
 
-.btn-hover {
-    position: relative;
-    overflow: hidden;
-}
+        .btn-hover {
+            position: relative;
+            overflow: hidden;
+        }
 
-.btn-hover:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-}
+        .btn-hover:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
 
-.btn-hover:hover:before {
-    width: 100%;
-}
+        .btn-hover:hover:before {
+            width: 100%;
+        }
 
-/* Delete button animation */
-.delete-btn {
-    transform: scale(0.9);
-    opacity: 0.7;
-    transition: all 0.3s ease;
-}
+        /* Delete button animation */
+        .delete-btn {
+            transform: scale(0.9);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
 
-.card:hover .delete-btn {
-    transform: scale(1);
-    opacity: 1;
-}
+        .card:hover .delete-btn {
+            transform: scale(1);
+            opacity: 1;
+        }
 
-/* Status badge styling */
-.badge {
-    font-size: 0.7rem;
-    letter-spacing: 0.5px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-}
+        /* Status badge styling */
+        .badge {
+            font-size: 0.7rem;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
 
-.badge.bg-success {
-    background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%) !important;
-}
+        .badge.bg-success {
+            background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%) !important;
+        }
 
-.card:hover .badge {
-    transform: translateY(2px);
-}
+        .card:hover .badge {
+            transform: translateY(2px);
+        }
 
-        .delay-1 { animation-delay: 0.2s; }
-        .delay-2 { animation-delay: 0.4s; }
-        .delay-3 { animation-delay: 0.6s; }
+        .delay-1 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-2 {
+            animation-delay: 0.4s;
+        }
+
+        .delay-3 {
+            animation-delay: 0.6s;
+        }
     </style>
 </head>
 
@@ -700,58 +711,58 @@
     <div class="hero-section">
 
 
-            <x-acceuil.header />
+        <x-acceuil.header />
 
-            <div class="container mt-5">
-                <div class="row justify-content-center">
-                    @forelse ($siteGenerators as $site)
-                        @if ($site->user_id == Auth::user()->id)
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+
+                @forelse ($siteGenerators as $site)
+                    @if ($site->user_id == Auth::user()->id)
                         <div class="col-lg-4 col-md-6 col-12 mb-4">
                             <div class="card hover-card shadow-lg border-0 overflow-hidden transition-all">
                                 <div class="image-wrapper position-relative overflow-hidden">
                                     <!-- Delete Button -->
                                     <button type="button"
                                         class="btn btn-danger btn-sm position-absolute top-0 end-0 m-2 rounded-circle shadow delete-btn"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#deleteModal"
-                                        data-site-id="{{ $site->id }}"
-                                        aria-label="Supprimer"
+                                        data-bs-toggle="modal" data-bs-target="#deleteModal"
+                                        data-site-id="{{ $site->id }}" aria-label="Supprimer"
                                         style="width: 32px; height: 32px; z-index: 2;">
                                         <i class="fas fa-times" style="font-size: 0.9rem;"></i>
                                     </button>
-                                    
-                                
-                                    
-                                    <img src="{{ asset($site->logo_url ?? '/images/template1.png') }}" 
-                                        class="card-img-top img-fluid hover-zoom" 
-                                        alt="Template Preview">
+
+
+
+                                    <img src="{{ asset($site->logo_url ?? '/images/template1.png') }}"
+                                        class="card-img-top img-fluid hover-zoom" alt="Template Preview">
                                     <div class="image-overlay"></div>
                                 </div>
-                                
+
                                 <div class="card-body text-center px-4 py-3">
-                                    <h5 class="card-title fw-bold text-primary mb-1">{{$site->site_name }}</h5>
-                                    <p class="card-text text-muted mb-3 small">{{ Str::limit($site->site_description, 60) }}</p>
-                                    
+                                    <h5 class="card-title fw-bold text-primary mb-1">{{ $site->site_name }}</h5>
+                                    <p class="card-text text-muted mb-3 small">
+                                        {{ Str::limit($site->site_description, 60) }}</p>
+
                                     <div class="d-flex justify-content-between align-items-center mb-2">
                                         <small class="text-muted">
-                                            <i class="far fa-calendar-alt me-1"></i> {{ $site->created_at->format('d M Y') }}
+                                            <i class="far fa-calendar-alt me-1"></i>
+                                            {{ $site->created_at->format('d M Y') }}
                                         </small>
-                                        
+
                                     </div>
-                                    
-                                    <div class="d-flex gap-2 mt-3" >
+
+                                    <div class="d-flex gap-2 mt-3">
                                         <!-- View Template Button -->
-                                        <a class="btn btn-gradient-primary flex-grow-1 rounded-pill py-2 btn-hover" 
-                                        href="{{ route('form.template1', ['id' => $site->id]) }}">
+                                        <a class="btn btn-gradient-primary flex-grow-1 rounded-pill py-2 btn-hover"
+                                            href="{{ route('form.template1', ['id' => $site->id]) }}">
                                             <span class="d-flex align-items-center justify-content-center">
                                                 <i class="fas fa-eye me-2"></i>
                                                 Voir
                                             </span>
                                         </a>
-                                        
+
                                         <!-- Update Template Button -->
-                                        <a class="btn btn-outline-primary flex-grow-1 rounded-pill py-2 btn-hover " 
-                                          href="{{ route('form.edit-template') }}">
+                                        <a class="btn btn-outline-primary flex-grow-1 rounded-pill py-2 btn-hover "
+                                            href="{{ route('form.edit-template') }}">
                                             <span class="d-flex align-items-center justify-content-center">
                                                 <i class="fas fa-pen me-2"></i>
                                                 Modifier
@@ -761,39 +772,41 @@
                                 </div>
                             </div>
                         </div>
-                        @endif
-                    @empty
-                        <div class="col-12 text-center">
-                            <p class="lead">Vous n'avez pas encore créé de site. Commencez à en créer un !</p>
-                        </div>
-                    @endforelse
+                    @endif
+                @empty
+                    <div class="col-12 text-center">
+                        <p class="lead">Vous n'avez pas encore créé de site. Commencez à en créer un !</p>
+                    </div>
+                @endforelse
 
 
-                    <div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header bg-danger text-white">
-                                    <h5 class="modal-title">Confirmer la suppression</h5>
-                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    Êtes-vous sûr de vouloir supprimer définitivement ce site ?
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                                    <form id="deleteForm" method="POST">
-                                        @csrf
-                                        @method('DELETE')
-                                        <button type="submit" class="btn btn-danger">
-                                            <i class="fas fa-trash me-2"></i>Supprimer
-                                        </button>
-                                    </form>
-                                </div>
+                <div class="modal fade" id="deleteModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-danger text-white">
+                                <h5 class="modal-title">Confirmer la suppression</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Êtes-vous sûr de vouloir supprimer définitivement ce site ?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Annuler</button>
+                                <form id="deleteForm" method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger">
+                                        <i class="fas fa-trash me-2"></i>Supprimer
+                                    </button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
     <script src="{{ asset('js/home.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -816,7 +829,8 @@
 
             // Animation de suppression de la carte
             document.getElementById('deleteForm').addEventListener('submit', (e) => {
-                const button = document.querySelector(`[data-site-id="${e.target.action.split('/').pop()}"]`);
+                const button = document.querySelector(
+                    `[data-site-id="${e.target.action.split('/').pop()}"]`);
                 if (button) {
                     const card = button.closest('.col-lg-4');
                     card.style.transition = 'all 0.3s';
@@ -827,21 +841,21 @@
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-   
+
     <script src="{{ asset('js/home.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
-    
+
         // Dark mode toggle
         const darkModeToggle = document.getElementById('darkModeToggle');
         const body = document.body;
-    
+
         // Check saved theme in localStorage
         let isDark = localStorage.getItem('theme') === 'dark';
-    
+
         const updateTheme = () => {
             if (isDark) {
                 body.classList.add('dark-mode');
@@ -852,19 +866,19 @@
             }
             lucide.createIcons(); // Reinitialize icons
         };
-    
+
         darkModeToggle.addEventListener('click', () => {
             isDark = !isDark;
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
             updateTheme();
         });
-    
+
         // Initialize theme on page load
         updateTheme();
-    
 
 
-   
+
+
 
         let currentLang = localStorage.getItem('lang') || 'fr'; // Définit 'fr' comme langue par défaut
 
@@ -888,39 +902,7 @@
                 btnLearnMore: "En savoir plus",
             }
         };
-
-            
-
-                const langDropdownItems = document.querySelectorAll('.dropdown-item');
-
-                langDropdownItems.forEach(item => {
-                    item.addEventListener('click', (event) => {
-                        event.preventDefault();
-                        const selectedLang = item.getAttribute('data-lang');
-                        currentLang = selectedLang;
-                        localStorage.setItem('lang', currentLang);
-                        updateLanguage();
-                    });
-                });
-                const updateLanguage = () => {
-                    console.log("Updating language to:", currentLang);
-                    const elements = document.querySelectorAll('[data-translate]');
-                    elements.forEach(el => {
-                        const key = el.getAttribute('data-translate');
-                        console.log("Translating key:", key);
-                        if (translations[currentLang] && translations[currentLang][key]) {
-                            el.textContent = translations[currentLang][key];
-                        }
-                    });
-                };
-
-
-
-                // Language toggle
-       
     </script>
 </body>
 
 </html>
-
-

@@ -23,11 +23,11 @@
                                                     Gener site web
                                                 </a>
                                             @else
-                                                <a href="#loginModal2" data-toggle="modal" class="btn1">
+                                                <a href="#loginModal1" data-toggle="modal" class="btn1">
                                                     Gener site web
                                                 </a>
                                             @endif
-                                           
+
                                         </div>
 
                                     </div>

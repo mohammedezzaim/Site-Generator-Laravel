@@ -52,13 +52,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <style>
         :root {
             --primary: #3B82F6;
@@ -506,7 +506,7 @@
                 margin-bottom: 20px;
             }
         }
-    
+
 
         .hover-card {
             border-radius: 1rem;
@@ -584,7 +584,7 @@
                     <div class="card-body text-center px-4 py-4">
                         <p class="card-text text-muted mb-3 fw-light">Description concise pour la carte 1</p>
                         <div class="d-grid gap-2">
-                            <a class="btn btn-gradient-primary rounded-pill px-4 py-2 btn-hover">
+                            <a class="btn btn-gradient-primary rounded-pill px-4 py-2 btn-hover"  href="{{ route('template1-prev') }}" >
                                 <span class="d-flex align-items-center justify-content-center">
                                     Voir le template
                                     <i class="fas fa-arrow-right ms-2 transition-all"></i>
@@ -636,34 +636,34 @@
             </div>
 
 
-        
-            
+
+
         </div>
 
-    
+
     </div>
 
     </section>
 
-    
+
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-   
+
     <script src="{{ asset('js/home.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
-    
+
         // Dark mode toggle
         const darkModeToggle = document.getElementById('darkModeToggle');
         const body = document.body;
-    
+
         // Check saved theme in localStorage
         let isDark = localStorage.getItem('theme') === 'dark';
-    
+
         const updateTheme = () => {
             if (isDark) {
                 body.classList.add('dark-mode');
@@ -674,19 +674,19 @@
             }
             lucide.createIcons(); // Reinitialize icons
         };
-    
+
         darkModeToggle.addEventListener('click', () => {
             isDark = !isDark;
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
             updateTheme();
         });
-    
+
         // Initialize theme on page load
         updateTheme();
-    
 
 
-   
+
+
 
         let currentLang = localStorage.getItem('lang') || 'fr'; // Définit 'fr' comme langue par défaut
 
@@ -711,7 +711,7 @@
             }
         };
 
-            
+
 
                 const langDropdownItems = document.querySelectorAll('.dropdown-item');
 
@@ -739,9 +739,9 @@
 
 
                 // Language toggle
-       
+
     </script>
-    
+
 </body>
 </html>
 

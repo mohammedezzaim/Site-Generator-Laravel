@@ -43,13 +43,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
     <style>
         :root {
             --primary: #3B82F6;
@@ -558,19 +558,19 @@
                 <p class="hero-description" data-translate="heroDescription">
                     Transformez vos idées en templates professionnels. Personnalisez, modifiez et exportez en quelques clics.
                 </p>
-                <div class="d-flex gap-3">                                            
-                    @if (Auth()->check())                        
+                <div class="d-flex gap-3">
+                    @if (Auth()->check())
                         <a href="#pricing" class="btn btn-custom btn-primary" data-translate="btnStart">
                             Commencer
                         </a>
-                    @else                                                 
-                        <a href="#loginModal2" class="btn btn-custom btn-primary" data-toggle="modal" data-translate="btnStart">
+                    @else
+                        <a href="#loginModal1" class="btn btn-custom btn-primary" data-toggle="modal" data-translate="btnStart">
                             Commencer
                         </a>
-                    @endif                                           
-                    <button type="button" 
-                            class="btn btn-custom btn-outline" 
-                            data-bs-toggle="modal" 
+                    @endif
+                    <button type="button"
+                            class="btn btn-custom btn-outline"
+                            data-bs-toggle="modal"
                             data-bs-target="#videoModal"
                             data-translate="btnLearnMore">
                         Comment Cree un projet
@@ -579,8 +579,8 @@
             </div>
             <div class="col-lg-6 animate-fade-up delay-1">
                 <div class="hero-image">
-                    <img src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg" 
-                         alt="Template Generator" 
+                    <img src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg"
+                         alt="Template Generator"
                          class="img-fluid">
                 </div>
             </div>
@@ -625,7 +625,7 @@
                         </div>
                     </div>
 
-                    
+
                     <!-- Carte Projet Gratuit -->
                     <div class="col-md-6">
                         <div class="card h-100 border-0 shadow-lg hover-scale">
@@ -683,7 +683,7 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
                 <h2 class="display-4 fw-bold mb-3">Choisissez votre plan</h2>
                 <p class="lead">Des options flexibles pour tous vos besoins</p>
             </div>
-            
+
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <div class="pricing-card">
@@ -692,7 +692,7 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
                             <div class="price">0€</div>
                             <div class="price-period">/mois</div>
                         </div>
-                        
+
                         <ul class="feature-list">
                             <li class="feature-item">
                                 <i data-lucide="check" class="feature-icon"></i>
@@ -711,13 +711,13 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
                                 Support communautaire
                             </li>
                         </ul>
-                        
-                        <a href="{{ route('gener-sit-web') }}" class="btn btn-custom btn-outline w-100">                            
+
+                        <a href="{{ route('gener-sit-web') }}" class="btn btn-custom btn-outline w-100">
                             Commencer gratuitement
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-6">
                     <div class="pricing-card" style="background: linear-gradient(135deg, var(--primary), var(--accent));">
                         <div class="pricing-header border-0">
@@ -725,7 +725,7 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
                             <div class="price text-white">19.99€</div>
                             <div class="price-period text-white opacity-75">/mois</div>
                         </div>
-                        
+
                         <ul class="feature-list">
                             <li class="feature-item text-white">
                                 <i data-lucide="check" class="feature-icon text-white"></i>
@@ -748,9 +748,9 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
                                 Stockage cloud illimité
                             </li>
                         </ul>
-                        
+
                         <a class="btn btn-custom w-100" style="background: white; color: var(--primary);" href="{{ route('gener-sit-web-premium') }}">
-                            <i class="fas fa-magic me-2"></i>Passer au Premium 
+                            <i class="fas fa-magic me-2"></i>Passer au Premium
                         </a>
                     </div>
                 </div>
@@ -765,12 +765,26 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
                 <h2 class="display-4 fw-bold mb-3">Ce que disent nos clients</h2>
                 <p class="lead">Des milliers d'utilisateurs satisfaits</p>
             </div>
-            
+
             <div class="row">
+
                 <div class="col-lg-4 mb-4">
                     <div class="review-card">
-                        <img src="images/team-5.jpg" 
-                             alt="Chafai Ismail" 
+                        <img src="images/team-6.jpg"
+                             alt="Mohammed Ezzaim"
+                             class="review-avatar">
+                        <h4 class="review-author">Mohammed Ezzaim</h4>
+                        <p class="review-role">Full Stack Developer</p>
+                        <p class="review-text">
+                            GenGront a révolutionné ma façon de créer des templates. L'interface est intuitive et les résultats sont professionnels.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="review-card">
+                        <img src="images/team-5.jpg"
+                             alt="Chafai Ismail"
                              class="review-avatar">
                         <h4 class="review-author">Chafai Ismail</h4>
                         <p class="review-role">Full Stack Developer</p>
@@ -779,32 +793,21 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 mb-4">
                     <div class="review-card">
-                        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg" 
-                             alt="Thomas Dubois" 
+                        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg"
+                             alt="Thomas Dubois"
                              class="review-avatar">
                         <h4 class="review-author">Thomas Dubois</h4>
                         <p class="review-role">Entrepreneur</p>
                         <p class="review-text">
-                            "Un outil indispensable pour mon entreprise. La version premium offre un excellent rapport qualité-prix."
+                        Un outil indispensable pour mon entreprise. La version premium offre un excellent rapport qualité-prix.
                         </p>
                     </div>
                 </div>
-                
-                <div class="col-lg-4 mb-4">
-                    <div class="review-card">
-                        <img src="images/team-6.jpg" 
-                             alt="Mohammed Ezzaim" 
-                             class="review-avatar">
-                        <h4 class="review-author">Mohammed Ezzaim</h4>
-                        <p class="review-role">Directrice Marketing</p>
-                        <p class="review-text">
-                            "Grâce à GenGront, notre équipe marketing peut créer des landing pages rapidement et efficacement."
-                        </p>
-                    </div>
-                </div>
+
+
             </div>
         </div>
     </section>
@@ -819,21 +822,21 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
                         <div class="stat-label">Utilisateurs Actifs</div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-3 col-6 mb-4">
                     <div class="stat-card">
                         <div class="stat-number" data-count="5000">0</div>
                         <div class="stat-label">Templates Créés</div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-3 col-6 mb-4">
                     <div class="stat-card">
                         <div class="stat-number" data-count="25000">0</div>
                         <div class="stat-label">Téléchargements</div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-3 col-6">
                     <div class="stat-card">
                         <div class="stat-number" data-count="40">0</div>
@@ -868,7 +871,7 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h4 class="footer-title">Navigation</h4>
                     <a href="#" class="footer-link">Accueil</a>
@@ -876,7 +879,7 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
                     <a href="#pricing" class="footer-link">Tarifs</a>
                     <a href="#contact" class="footer-link">Contact</a>
                 </div>
-                
+
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h4 class="footer-title">Ressources</h4>
                     <a href="#" class="footer-link">Blog</a>
@@ -884,7 +887,7 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
                     <a href="#" class="footer-link">Tutoriels</a>
                     <a href="#" class="footer-link">Support</a>
                 </div>
-                
+
                 <div class="col-lg-4">
                     <h4 class="footer-title">Contact</h4>
                     <div class="contact-info">
@@ -901,9 +904,9 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
                     </div>
                 </div>
             </div>
-            
+
             <hr class="my-5">
-            
+
             <div class="row">
                 <div class="col-md-6 mb-3 mb-md-0">
                     <p class="mb-0">&copy; 2025 GenGront. Tous droits réservés.</p>
@@ -919,21 +922,20 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-   
+
     <script src="{{ asset('js/home.js') }}"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
-    
+
         // Dark mode toggle
         const darkModeToggle = document.getElementById('darkModeToggle');
         const body = document.body;
-    
+
         // Check saved theme in localStorage
         let isDark = localStorage.getItem('theme') === 'dark';
-    
+
         const updateTheme = () => {
             if (isDark) {
                 body.classList.add('dark-mode');
@@ -944,19 +946,19 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
             }
             lucide.createIcons(); // Reinitialize icons
         };
-    
+
         darkModeToggle.addEventListener('click', () => {
             isDark = !isDark;
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
             updateTheme();
         });
-    
+
         // Initialize theme on page load
         updateTheme();
-    
 
 
-   
+
+
 
         let currentLang = localStorage.getItem('lang') || 'fr'; // Définit 'fr' comme langue par défaut
 
@@ -981,35 +983,11 @@ document.getElementById('videoModal').addEventListener('show.bs.modal', function
             }
         };
 
+
+
             
 
-                const langDropdownItems = document.querySelectorAll('.dropdown-item');
 
-                langDropdownItems.forEach(item => {
-                    item.addEventListener('click', (event) => {
-                        event.preventDefault();
-                        const selectedLang = item.getAttribute('data-lang');
-                        currentLang = selectedLang;
-                        localStorage.setItem('lang', currentLang);
-                        updateLanguage();
-                    });
-                });
-                const updateLanguage = () => {
-                    console.log("Updating language to:", currentLang);
-                    const elements = document.querySelectorAll('[data-translate]');
-                    elements.forEach(el => {
-                        const key = el.getAttribute('data-translate');
-                        console.log("Translating key:", key);
-                        if (translations[currentLang] && translations[currentLang][key]) {
-                            el.textContent = translations[currentLang][key];
-                        }
-                    });
-                };
-
-
-
-                // Language toggle
-       
     </script>
 
 <script>

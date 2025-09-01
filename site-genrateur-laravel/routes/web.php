@@ -110,22 +110,6 @@ Route::get('templates/template3', function () {
 
 
 
-Route::get('/templates/{template}', function ($template) {
-    $allowedTemplates = ['template1', 'template2', 'template3']; // Liste des templates autorisés
-    if (in_array($template, $allowedTemplates)) {
-        return view("templates.$template.index"); // Charge le fichier Blade à partir de resources/views/templates/template1/index.blade.php
-    }
-    abort(404); // Si le template n'est pas trouvé, renvoie une erreur 404
-});
-
-
-Route::get('/templateviews/{template}', function ($template) {
-    $allowedTemplates = ['template1', 'template2', 'template3']; // Liste des templates autorisés
-    if (in_array($template, $allowedTemplates)) {
-        return view("templateviews.$template.index"); // Charge le fichier Blade à partir de resources/views/templates/template1/index.blade.php
-    }
-    abort(404); // Si le template n'est pas trouvé, renvoie une erreur 404
-});
 
 
 
@@ -181,3 +165,9 @@ Route::get('/gener-sit-web-premium', [InfoSiteWeb::class, 'premium'])->name('gen
 
 
 // end version update template with sidebar
+
+
+
+Route::get('templates/template1', function () {
+    return view('templateviews.template1.index');
+})->name('template1-prev');

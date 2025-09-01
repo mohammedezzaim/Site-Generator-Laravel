@@ -294,7 +294,7 @@ class EditTemplateSidebar extends Controller
 
 
     public function downloadPage()
-    {       
+    {
         if (!Auth::check()) {
             return response()->json(['error' => 'Utilisateur non authentifié'], 401);
         } {

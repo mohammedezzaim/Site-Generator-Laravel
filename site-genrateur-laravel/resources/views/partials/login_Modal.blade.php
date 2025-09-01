@@ -1,6 +1,6 @@
 
  <!-- Login Modal -->
-<div id="loginModal2" class="modal-style-2 dark modal">
+<div id="loginModal1" class="modal-style-2 dark modal">
     <div class="modal-dialog modal-login">
         <div class="modal-content">
             <div class="modal-header p-0">
@@ -43,17 +43,18 @@
                     </div>
                 </form>
             </div>
-            
+
             <div class="modal-footer">
-                Don't have an account? 
-                <a href="#registerModal2" data-dismiss="modal" data-toggle="modal">Register</a>
+                Don't have an account?
+               <a href="javascript:void(0)" onclick="$('#loginModal1').modal('hide'); $('#registerModal1').modal('show');">Register</a>
+
             </div>
         </div>
     </div>
 </div>
 
 <!-- Register Modal -->
-<div id="registerModal2" class="modal-style-2 dark modal">
+<div id="registerModal1" class="modal-style-2 dark modal">
     <div class="modal-dialog modal-login">
         <div class="modal-content">
             <div class="modal-header p-0">
@@ -106,8 +107,9 @@
                 </form>
             </div>
             <div class="modal-footer">
-                Already have an account? 
-                <a href="#loginModal2" data-dismiss="modal" data-toggle="modal">Login</a>
+                Already have an account?
+               <a href="javascript:void(0)" onclick="$('#registerModal1').modal('hide'); $('#loginModal1').modal('show');">Login</a>
+
             </div>
         </div>
     </div>
@@ -116,7 +118,7 @@
 
 
 
-{{-- 
+{{--
  <!-- <!-login modal 2  -->
  <div id="loginModal2" class="modal-style-2 dark modal ">
      <div class="modal-dialog modal-login">

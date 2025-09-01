@@ -22,7 +22,7 @@
                         <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="/templates">Templates</a></li>
                         <li class="nav-item">
-                            <a class="btn btn-outline-primary" href="#loginModal2" data-bs-toggle="modal">
+                            <a class="btn btn-outline-primary" href="#loginModal1" data-bs-toggle="modal">
                                 <i class="fas fa-user me-1"></i> Login
                             </a>
                         </li>
@@ -53,6 +53,8 @@
                             </ul>
                         </li>
                     @endif
+
+                
                 </ul>
 
                 <!-- Dropdown pour la langue et le mode sombre -->

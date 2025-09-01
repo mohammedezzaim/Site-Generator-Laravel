@@ -19,25 +19,27 @@ class SiteGeneratorController extends Controller
     private $type = TemplateType::template1;
 
 
-  
+
 
     public function store(Request $request)
     {
-        
+
         // Validation
         $request->validate([
             'site_name' => 'required|string|max:255',
             'contact_phone' => 'required|string|max:255',
             'contact_email' => 'required|email',
-            'site_description' => 'required|string|max:255',
+            'site_description' => 'required|string',
             'logo' => 'nullable|file|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+
 
         if ($request->hasFile('logo')) {
             // Envoi de l'image à Cloudinary
             $uploadedFileUrl = Cloudinary::upload($request->file('logo')->getRealPath(), [
                 'folder' => 'logos', // Optionnel : Nom du dossier
             ])->getSecurePath();
+
         }
 
 
@@ -73,7 +75,7 @@ class SiteGeneratorController extends Controller
         // return redirect()->route('sites.index')->with('success', 'Le site a été créé avec succès !');
 
         // return redirect()->route('form.edit-component')->with('success', 'Le site a été créé avec succès !');
-        
+
     }
 
 
@@ -143,7 +145,7 @@ class SiteGeneratorController extends Controller
     {
         // Appeler le service pour créer la structure de dossiers
         $message = $this->directoryService->createDirectoryStructure($folderName,$htmlCode,$cssCode);
-        
+
     }
 
     public function destroy(SiteGenerator $site)
